@@ -1,0 +1,13 @@
+<div *ngIf="card" class="row">
+  <div class="col s6">
+    <p class="flow-text">
+      Автор: {{card.author}}<br><br>
+      Краткое описание: {{card.description}}<br><br>
+      Скачать книгу можно здесь:
+      <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Скачать</a>
+    </p>
+  </div>
+  <div class="col s6">
+    <img src={{card.imageUrl}} alt="" class="bookImg">
+  </div>
+</div>

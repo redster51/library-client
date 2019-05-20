@@ -1,0 +1,13 @@
+<div class="row" id="input">
+  <div class="input-field col s9">
+    <i class="material-icons prefix">search</i>
+    <input class="validate" id="name" type="text" [(ngModel)]="inputStr">
+    <label for="name">Введите название статьи или книги</label>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <app-card *ngFor="let i of cards | search: inputStr" [card] = "i"></app-card>
+  </div>
+</div>
